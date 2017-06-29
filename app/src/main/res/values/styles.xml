@@ -1,0 +1,205 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">@color/color_ffffff</item>
+        <item name="popupMenuStyle">@style/PopupMenu</item>
+        <item name="android:itemTextAppearance">@style/PopupMenu.TextStyle</item>
+    </style>
+
+    <style name="Toolbar">
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="PopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:popupBackground">@drawable/popup</item>
+        <item name="android:textAppearanceLargePopupMenu">
+            @style/Base.TextAppearance.AppCompat.Light.Widget.PopupMenu.Large
+        </item>
+    </style>
+
+    <style name="PopupMenu.TextStyle" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:textColor">@color/color_ffffff</item>
+    </style>
+
+    <style name="BCMainCardView">
+        <item name="cardBackgroundColor">@android:color/transparent</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_elevation_0dp</item>
+        <item name="cardMaxElevation">@dimen/cardview_max_elevation_0dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="android:layout_margin">@dimen/cardview_default_margin</item>
+    </style>
+
+    <style name="BCHeaderTitle">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/txt_size_15sp</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:padding">@dimen/header_cardview_padding</item>
+    </style>
+
+    <style name="BCTextBlood">
+        <item name="android:textColor">@color/text_color_basic</item>
+        <item name="android:textSize">@dimen/txt_size_24sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="BCTextView">
+        <item name="android:textColor">@color/text_color_basic</item>
+        <item name="android:textSize">@dimen/txt_size_20sp</item>
+    </style>
+
+    <style name="BCButton" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/colorPrimaryText</item>
+    </style>
+
+    <style name="BCPopUpMenuButton">
+        <item name="android:textColor">@color/color_ffffff</item>
+        <item name="android:background">@drawable/general_comp_btn_sort</item>
+    </style>
+
+    <style name="BCButtonConfirmPoint">
+        <item name="android:background">@drawable/btn_01</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">@dimen/txt_size_15sp</item>
+    </style>
+
+    <style name="BCButtonConfirmPoint2">
+        <item name="android:background">@drawable/btn_02</item>
+        <item name="android:textColor">@color/colorBoxWeight</item>
+        <item name="android:textSize">@dimen/txt_size_15sp</item>
+    </style>
+
+    <style name="BCButtonConfirmGrey">
+        <item name="android:background">@drawable/btn_02</item>
+        <item name="android:textColor">@color/colorBoxWeight</item>
+        <item name="android:textSize">@dimen/txt_size_15sp</item>
+    </style>
+
+    <style name="BCInputTextView">
+        <item name="android:textSize">@dimen/txt_size_12sp</item>
+        <item name="android:textColor">@color/text_color_basic</item>
+    </style>
+
+    <style name="BCEditText">
+        <item name="android:textColor">@color/text_color_basic</item>
+        <item name="android:background">@drawable/bg_edt_input</item>
+    </style>
+
+    <style name="BCInputButton">
+        <item name="android:background">@drawable/general_comp_btn_input</item>
+        <item name="android:textColor">@color/text_color_basic</item>
+    </style>
+
+    <style name="BCTextField">
+        <item name="android:background">@drawable/bg_edt_input</item>
+        <item name="android:padding">@dimen/activity_vertical_padding</item>
+        <item name="android:layout_marginBottom">@dimen/text_field_margin</item>
+    </style>
+
+    <style name="BCTextFieldInput">
+        <item name="android:background">@drawable/bg_edt_input</item>
+        <item name="android:padding">@dimen/activity_vertical_padding</item>
+    </style>
+
+    <style name="BCCheckBox">
+        <item name="android:button">@drawable/general_comp_btn_checkbox</item>
+        <item name="android:textColor">@color/colorUnit</item>
+        <item name="android:padding">@dimen/activity_vertical_padding</item>
+    </style>
+
+    <style name="BCLoginCheckBox">
+        <item name="android:button">@drawable/login_comp_btn_checkbox</item>
+        <item name="android:textColor">@color/colorUnit</item>
+    </style>
+
+    <style name="BCRadio">
+        <item name="android:textSize">@dimen/txt_size_12sp</item>
+        <item name="android:button">@drawable/general_comp_btn_radio</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:padding">@dimen/activity_vertical_padding</item>
+    </style>
+
+    <style name="BCSwitch">
+        <item name="android:track">@drawable/switch_bg</item>
+        <item name="android:thumb">@drawable/switch_thumb</item>
+        <item name="android:textOn">@string/cap_on</item>
+        <item name="android:textOff">@string/cap_off</item>
+        <item name="android:switchPadding">@dimen/default_padding</item>
+    </style>
+
+    <style name="BCDotVertical">
+        <item name="android:background">@drawable/dot_vertical</item>
+    </style>
+
+    <style name="BCDotHorizontal">
+        <item name="android:background">@drawable/dot_vertical</item>
+    </style>
+
+    <style name="BCTextTitle">
+    <item name="android:textColor">@color/colorPrimaryDark</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:layout_margin">0dp</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:gravity">center</item>
+</style>
+
+    <style name="BCSubTextTitle">
+        <item name="android:textSize">@dimen/txt_size_12sp</item>
+        <item name="android:textColor">@color/text_color_basic</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="BCSub2TextTitle">
+        <item name="android:textSize">@dimen/txt_size_12sp</item>
+        <item name="android:textColor">@color/text_color_basic</item>
+        <item name="android:layout_margin">25dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="BCCardView" parent="CardView">
+        <item name="android:layout_margin">16dp</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+    </style>
+
+    <style name="BCDialog" parent="android:Theme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="BCSwicth" parent="android:Theme.Holo" />
+
+    <style name="text_title">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginLeft">16dip</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="text_label">
+        <item name="android:typeface">sans</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#e2e2e2</item>
+    </style>
+
+</resources>

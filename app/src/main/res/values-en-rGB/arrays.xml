@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="recent_search">
+        <item>Lately</item>
+        <item>Work</item>
+        <item>Week</item>
+        <item>Mouth</item>
+    </array>
+
+    <array name="total_search">
+        <item>All</item>
+        <item>Equipment</item>
+        <item>User</item>
+    </array>
+</resources>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--Menu Item-->
+    <LinearLayout
+        android:id="@+id/menuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/color_bg_nav_menu"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgMenuItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sidemenu_icon_home_selected" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.80"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/txtMenuItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/application_text_size_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:gravity="center|right">
+
+            <ImageView
+                android:id="@+id/imgSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sidemenu_selectedtip"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--Menu Header-->
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/menuHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/color_bg_nav_header"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="2dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/txtMenuHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/application_text_size" />
+    </LinearLayout>
+</FrameLayout>

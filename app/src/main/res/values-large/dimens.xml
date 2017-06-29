@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="application_text_size">18sp</dimen>
+    <dimen name="health_recommendation_text_size">26sp</dimen>
+    <dimen name="main_text_size_26sp">26sp</dimen>
+    <dimen name="txt_size_24sp">28sp</dimen>
+    <dimen name="txt_size_15sp">19sp</dimen>
+    <dimen name="txt_size_12sp">16sp</dimen>
+    <dimen name="txt_size_20sp">24sp</dimen>
+    <dimen name="txt_size_26sp">30sp</dimen>
+    <dimen name="txt_size_30sp">34sp</dimen>
+    <dimen name="txt_size_6sp">8sp</dimen>
+    <dimen name="list_item_margin_1dp">2dp</dimen>
+</resources>

@@ -1,0 +1,52 @@
+import java.text.DateFormat
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+
+String APK_NAME = "BitCare"
+int VERSION_CODE = 1
+String VERSION_NAME = "1.0.0.17"
+String DATE = getDateTime()
+
+def getDateTime() {
+
+    DateFormat df = new SimpleDateFormat("yyyyMMdd");
+    return df.format(new Date());
+}
+
+project.archivesBaseName = APK_NAME + VERSION_NAME + "_" + DATE;
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+    defaultConfig {
+        applicationId "asia.health.bitcare"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode VERSION_CODE
+        versionName VERSION_NAME
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //BLE lib
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.amitshekhar.android:android-networking:0.3.0'
+    compile 'com.github.PhilJay:MPAndroidChart:v3.0.1'
+    compile 'io.reactivex:rxjava:1.0.10'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile files('libs/achartengine-1.2.0.jar')
+}

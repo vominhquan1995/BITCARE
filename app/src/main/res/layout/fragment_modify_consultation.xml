@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="asia.health.bitcare.fragment.HealthInfoFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/notice_margin"
+        android:layout_weight="0.7"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputEditText
+            style="@style/BCTextField"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top"
+            android:hint="@string/cap_content"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            style="@style/BCRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/cap_bloodpressure" />
+
+        <RadioButton
+            style="@style/BCRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/cap_bloodsugar" />
+
+        <RadioButton
+            style="@style/BCRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/cap_reservation" />
+
+        <RadioButton
+            style="@style/BCRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/default_margin"
+            android:text="@string/cap_etc" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.15"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/BCButtonConfirmGrey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_default"
+            android:layout_weight="5"
+            android:text="@string/cap_delete"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            style="@style/BCButtonConfirmPoint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_default"
+            android:layout_weight="5"
+            android:text="@string/cap_modify" />
+
+    </LinearLayout>
+
+</LinearLayout>

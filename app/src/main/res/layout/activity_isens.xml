@@ -1,0 +1,304 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="17dp"
+        android:paddingLeft="17dp"
+        android:paddingBottom="17dp"
+        android:paddingTop="13dp"
+        android:weightSum="10"
+        tools:context=".isens.IsensActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="7">
+
+            <Button
+                android:id="@+id/startScanButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:onClick="onStartScanClick"
+                android:padding="15dip"
+                android:text="기기 검색"
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/stopScanButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3.5"
+                android:onClick="onStopScanClick"
+                android:padding="15dip"
+                android:text="기기검색 정지"
+                android:textAllCaps="false"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.67"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/checkbox_autoConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"
+            android:checked="true"
+            android:text="Auto connect to already paired devices"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:layout_gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:checkedButton="@+id/radio_mgdl"
+            android:visibility="gone">
+            <RadioButton
+                android:id="@+id/radio_mgdl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/dL"/>
+            <RadioButton
+                android:id="@+id/radio_mmoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mmol/L"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/title_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.5"
+            android:text="[Discovered devices]"
+            android:textColor="@color/black"
+            android:textSize="16sp"></TextView>
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6"></ListView>
+
+        <LinearLayout
+            android:id="@+id/deviceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1.4"
+            android:orientation="vertical"
+            android:weightSum="10"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3.3"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8"
+                    android:text="Name: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/device_name"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8.2"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3.3"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SN: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/serial_num"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:text="Ver: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/software_version"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3.3"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.1"
+                    android:text="Total count: "
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/total_count"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6.9"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttonView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="12.5">
+
+            <Button
+                android:id="@+id/downloadAllButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="2.5"
+                android:onClick="onDownloadAllClick"
+                android:padding="15dip"
+                android:text="Download all"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2.5"
+                android:weightSum="10">
+
+                <Button
+                    android:id="@+id/downloadAfterButton"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4.8"
+                    android:onClick="onDownloadAfterClick"
+                    android:padding="15dip"
+                    android:text="Download after"
+                    android:textAllCaps="false"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/sequence_num"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dip"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/synchronizeTimeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="2.5"
+                android:onClick="onSynchronizeTimeClick"
+                android:padding="15dip"
+                android:text="Synchronize time"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/disconnectButton"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:layout_weight="2.5"
+                android:onClick="onDisconnectClick"
+                android:padding="15dip"
+                android:text="Disconnect"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="0dip"
+            android:layout_weight="0.9"
+            android:onClick="onBackClick"
+            android:text="Back" />
+
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="6.5"
+            android:layout_margin="5dip" />
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</FrameLayout>
+
+
+
+
+

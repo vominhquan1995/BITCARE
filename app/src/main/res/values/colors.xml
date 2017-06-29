@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#222222</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#fff07837</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorRed700">#D32F2F</color>
+    <color name="colorOrange500">#FF9800</color>
+    <color name="colorBg">#FFFFFF</color>
+    <color name="colorYellow600">#FDD835</color>
+
+    <!-- primary color from old project -->
+    <color name="color_bg_nav_menu">#2e2e2e</color>
+    <color name="color_bg_nav_background">#000000</color>
+    <color name="color_bg_nav_header">#222222</color>
+    <color name="color_home_text">#47a69c</color>
+    <color name="color_blood_pressure_text">#e35d68</color>
+    <color name="color_blood_sugar_text">#f07937</color>
+    <color name="color_notice_text">#c960a4</color>
+    <color name="color_weight_text">#8ebe51</color>
+    <color name="color_target_weight_text">#e0a32c</color>
+    <color name="color_setting_text">#b2b2b2</color>
+    <color name="color_device_setting_text">#b2b2b2</color>
+    <color name="color_term_text">#b2b2b2</color>
+    <color name="color_transparent">#ff000000</color>
+    <color name="color_7c7c7c">#7c7c7c</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_888888">#888888</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_ffffffff">#ffffffff</color>
+    <color name="color_22ffffff">#22ffffff</color>
+    <color name="text_color_basic">#ff555555</color>
+    <color name="text_color_grey">#ffaaaaaa</color>
+    <color name="text_color_highlight">#ff000000</color>
+    <color name="text_color">#ff444444</color>
+    <color name="list_even_row">#ffeeeae3</color>
+    <color name="list_focus_over">#fffafafa</color>
+    <color name="list_focus_out">#ffffffff</color>
+    <color name="text_color_white">#ffffffff</color>
+    <color name="text_color_alert">#ffe35d66</color>
+    <color name="color_bright_orange">#fff07837</color>
+    <color name="color_dark_orange">#ffe37134</color>
+    <color name="color_bp_red">#ffe35d68</color>
+    <color name="color_red">#ffe35d68</color>
+    <color name="color_blue">#ff01afd1</color>
+    <color name="color_violet">#ffca5ea8</color>
+    <color name="color_green">#ff808a43</color>
+    <color name="color_brown">#ff8f7a66</color>
+    <color name="color_eden">#ff77cca4</color>
+    <color name="color_light_green">#ff8ebe51</color>
+
+    <!--New design-->
+    <color name="colorGrey">#9E9E9E</color>
+    <color name="colorYellow">#ffcd37</color>
+    <color name="colorYellowDayOfWeek">#996600</color>
+    <color name="main_tool_bar">#242a33</color>
+    <color name="colorUnit">#585858</color>
+    <color name="nav_header_bg_color">#ffcd37</color>
+    <color name="nav_menu_text_color">#585858</color>
+    <color name="nav_bg_color">#cccccc</color>
+    <color name="colorBoxWeight">#313445</color>
+    <color name="colorDateHistory">#313445</color>
+    <color name="colorSystolic">#f34a56</color>
+    <color name="colorPulse">#4092ff</color>
+    <color name="colorDiatole">#5d55ff</color>
+    <color name="colorWeight">#83b416</color>
+    <color name="main_notice_color">#333333</color>
+    <color name="color_background_chart">#626b6b</color>
+    <color name="color_303030">#303030</color>
+
+    <color name="main_bg">#fcfcfc</color>
+    <color name="black">#333333</color>
+    <color name="grey">#9c9c9c</color>
+    <color name="blue">#1762c6</color>
+    <color name="pink">#ee73eb</color>
+
+    <color name="edit">#555555</color>
+
+    <color name="under_text">#d24151</color>    <!-- 저혈당텍스트 (빨강) -->
+    <color name="low_text">#f6ec84</color>        <!-- 저혈당~목표하한혈당텍스트 (노랑) -->
+    <color name="inbounds_text">#6bcc99</color>    <!-- 목료내혈당텍스트 (초록) -->
+    <color name="exceed_text">#579fdd</color>    <!-- 목표상한초과혈당텍스트 (파랑) -->
+    <color name="ketone_text">#ee73eb</color>    <!-- ketone텍스트 (pink) -->
+
+    <color name="under_spot">#edb2b9</color>    <!-- 저혈당 (빨강) -->
+    <color name="low_spot">#f9f3b5</color>        <!-- 저혈당~목표하한혈당 (노랑) -->
+    <color name="inbounds_spot">#c5e7d5</color>    <!-- 목료내혈당 (초록) -->
+    <color name="exceed_spot">#bcd8ee</color>    <!-- 목표상한초과혈당 (파랑) -->
+
+    <color name="under_line">#eeb3ba</color>    <!-- 저혈당라인 (빨강) -->
+    <color name="low_line">#f5febe</color>        <!-- 목표하한라인 (노랑) -->
+    <color name="exceed_line">#bbd8f1</color>    <!-- 목표상한라인 (파랑) -->
+    <color name="grid_line">#c0c0c0</color>        <!-- 그래프 그리드라인 -->
+
+    <color name="under_stat">#ff3333</color>    <!-- 저혈당 (빨강)-->
+    <color name="low_stat">#f0d100</color>        <!-- 저혈당~목표하한혈당  (노랑)-->
+    <color name="inbounds_stat">#6bcc99</color>    <!-- 목료내혈당 (초록) -->
+    <color name="exceed_stat">#33ccff</color>    <!-- 목표상한초과혈당 (파랑)-->
+
+    <color name="line">#e2e2e2</color>
+    <color name="light_grey">#ededed</color>
+</resources>

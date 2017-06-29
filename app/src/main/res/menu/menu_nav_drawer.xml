@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <!--<group android:checkableBehavior="single">-->
+
+    <!--<item-->
+    <!--android:id="@+id/menu_home"-->
+    <!--android:icon="@drawable/sidemenu_home"-->
+    <!--android:title="@string/cap_home" />-->
+
+    <!--<item android:title="@string/cap_healthcare">-->
+
+    <!--<menu>-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/menu_blood_pressure"-->
+    <!--android:icon="@drawable/sidemenu_pressure"-->
+    <!--android:title="@string/cap_bloodpressure" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/menu_blood_sugar"-->
+    <!--android:icon="@drawable/sidemenu_sugar"-->
+    <!--android:title="@string/cap_bloodsugar" />-->
+    <!--</group>-->
+    <!--</menu>-->
+    <!--</item>-->
+
+    <!--<item android:title="@string/activity_main_notificationconsultation">-->
+
+    <!--<menu>-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/menu_notice"-->
+    <!--android:icon="@drawable/sidemenu_notice"-->
+    <!--android:title="@string/cap_notice" />-->
+    <!--</group>-->
+
+    <!--</menu>-->
+    <!--</item>-->
+
+    <!--<item android:title="@string/cap_obesitymanagement">-->
+
+    <!--<menu>-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/menu_weight"-->
+    <!--android:icon="@drawable/sidemenu_weight"-->
+    <!--android:title="@string/cap_weight" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/menu_target_weight"-->
+    <!--android:icon="@drawable/sidemenu_target_weight"-->
+    <!--android:title="@string/cap_targetweight" />-->
+    <!--</group>-->
+    <!--</menu>-->
+    <!--</item>-->
+
+    <!--<item android:title="@string/cap_settings">-->
+
+    <!--<menu>-->
+    <!--<group android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/menu_general_settings"-->
+    <!--android:icon="@drawable/sidemenu_general_settings"-->
+    <!--android:title="@string/cap_generalsettings" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/menu_device_settings"-->
+    <!--android:icon="@drawable/sidemenu_device_settings"-->
+    <!--android:title="@string/cap_devicesettings" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/menu_term_of_use"-->
+    <!--android:icon="@drawable/sidemenu_term_of_use"-->
+    <!--android:title="@string/cap_termofuse" />-->
+    <!--</group>-->
+    <!--</menu>-->
+    <!--</item>-->
+    <!--</group>-->
+</menu>

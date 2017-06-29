@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/BCInputTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_weight="0.25"
+        android:textColor="@color/text_color_highlight"
+        android:gravity="left"
+        android:text="@string/cap_genger"
+        tools:ignore="RtlHardcoded" />
+
+    <RadioGroup
+        android:id="@+id/rdgChoice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_weight="0.75"
+        android:checkedButton="@+id/rdo1"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdo1"
+            style="@style/BCRadio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:checkedButton="@+id/rdo1"
+            android:textColor="@color/colorUnit"
+            android:orientation="horizontal" />
+
+        <RadioButton
+            style="@style/BCRadio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorUnit"
+            android:orientation="horizontal" />
+
+    </RadioGroup>
+
+</LinearLayout>

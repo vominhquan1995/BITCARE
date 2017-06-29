@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/BCInputTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin"
+        android:layout_marginRight="@dimen/default_margin"
+        android:layout_weight="0.25"
+        android:gravity="left"
+        android:text="@string/cap_phone_number"
+        tools:ignore="RtlHardcoded" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.75"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtPhoneNo1"
+            style="@style/BCTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginRight="@dimen/default_margin"
+            android:layout_weight="0.3"
+            android:gravity="left"
+            android:maxLines="1"
+            android:inputType="phone"
+            android:imeOptions="actionNext"
+            android:maxLength="3"
+            android:padding="@dimen/default_padding"
+            tools:ignore="LabelFor,NestedWeights,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/edtPhoneNo2"
+            style="@style/BCTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_weight="0.35"
+            android:gravity="left"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:padding="@dimen/default_padding"
+            tools:ignore="LabelFor,RtlHardcoded" />
+
+        <EditText
+            android:id="@+id/edtPhoneNo3"
+            style="@style/BCTextField"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_weight="0.35"
+            android:maxLines="1"
+            android:gravity="left"
+            android:inputType="phone"
+            android:maxLength="4"
+            android:imeOptions="actionDone"
+            android:padding="@dimen/default_padding"
+            tools:ignore="LabelFor,RtlHardcoded" />
+    </LinearLayout>
+</LinearLayout>

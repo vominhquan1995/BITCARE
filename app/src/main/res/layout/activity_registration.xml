@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.74"
+        android:orientation="horizontal">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.76"
+            android:background="@drawable/login_box"
+            android:orientation="horizontal">
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center|bottom"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_title"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Title"
+                            style="@style/BCTextTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/registration_init_title"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            style="@style/BCSubTextTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/activitysignup_title"
+                            android:textColor="@color/colorPrimaryDark" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.7"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|top"
+                        android:orientation="vertical">
+                        <include
+                            android:id="@+id/vgID"
+                            layout="@layout/viewgroup_input" />
+                        <Button
+                            android:id="@+id/btn_check_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@color/color_dark_orange"
+                            android:textColor="@color/colorWhite"
+                            android:layout_gravity="center"
+                            android:textSize="@dimen/application_text_size_small"
+                            android:text="@string/button_check_id"/>
+                        <include
+                            android:id="@+id/vgPassword"
+                            layout="@layout/viewgroup_input_password" />
+                        <include
+                            android:id="@+id/vgPasswordConfirm"
+                            layout="@layout/viewgroup_input_password" />
+
+                        <include
+                            android:id="@+id/vgName"
+                            layout="@layout/viewgroup_input" />
+
+                        <include
+                            android:id="@+id/vgGenger"
+                            layout="@layout/viewgroup_input" />
+
+                        <include
+                            android:id="@+id/vgHeight"
+                            layout="@layout/viewgroup_input_unit" />
+
+                        <include
+                            android:id="@+id/vgWeight"
+                            layout="@layout/viewgroup_input_unit" />
+
+                        <include
+                            android:id="@+id/vgBirthday"
+                            layout="@layout/viewgroup_input" />
+
+                        <include
+                            android:id="@+id/vgPhoneNumber"
+                            layout="@layout/viewgroup_input" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/vgCheck"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <Button
+                                    android:id="@+id/btnViewTerms"
+                                    style="@style/BCButtonConfirmGrey"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="@dimen/default_margin"
+                                    android:layout_marginLeft="@dimen/default_margin"
+                                    android:layout_marginRight="@dimen/default_margin"
+                                    android:layout_weight="1"
+                                    android:text="@string/activitysignupconfirm_viewterms" />
+
+                                <CheckBox
+                                    android:id="@+id/cbCheck"
+                                    style="@style/BCCheckBox"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="@string/low_agree" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnSignUp"
+                                style="@style/BCButtonConfirmPoint"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/default_margin"
+                                android:text="@string/cap_request_membership" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <android.support.v4.widget.Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12" />
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.11" />
+</LinearLayout>

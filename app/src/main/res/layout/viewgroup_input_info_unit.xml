@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"></LinearLayout>
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/BCInputTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2.5"
+        android:layout_margin="@dimen/default_margin"
+        android:textColor="@color/text_color_highlight"
+        android:gravity="left"
+        android:text="text"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/edtInput"
+        style="@style/BCTextFieldInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_weight="4"
+        android:gravity="left"
+        android:padding="@dimen/default_padding"
+        android:inputType="numberDecimal"
+        tools:ignore="LabelFor,TextFields" />
+
+    <TextView
+        android:id="@+id/tvUnit"
+        style="@style/BCInputTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_weight="3"
+        android:gravity="left"
+        android:textColor="@color/colorUnit"
+        android:text="text"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

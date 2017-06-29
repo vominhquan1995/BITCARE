@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_input"
+        android:icon="@drawable/sub_table_btn_comment"
+        android:title="@string/cap_input"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/setting_actionbar_btn_search"
+        android:title="@string/cap_search"
+        app:showAsAction="always" />
+
+</menu>

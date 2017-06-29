@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="recent_search">
+        <item>최근</item>
+        <item>일</item>
+        <item>주</item>
+        <item>월</item>
+    </array>
+
+    <array name="total_search">
+        <item>전체</item>
+        <item>장비</item>
+        <item>ꩡ용녅</item>
+    </array>
+
+    <array name="health_info_list">
+        <item>1. 주요 질환 정보</item>
+        <item>2. 맞춤형 운동 정보</item>
+        <item>3. 맞춤형 영양 정보</item>
+        <item>4. 맞춤형 비만 정보</item>
+        <item>5. 계절별 음식</item>
+        <item>6. 일반 건강 상식</item>
+    </array>
+
+    <array name="health_info_list1">
+        <item>1.1 혈압</item>
+        <item>1.2 혈압의 변동성</item>
+        <item>1.3 고혈압</item>
+        <item>1.4 저혈압</item>
+        <item>1.5 동맥경화</item>
+        <item>1.6 혈전</item>
+        <item>1.7 고지혈증</item>
+        <item>1.8 부정맥</item>
+        <item>1.9 당뇨</item>
+        <item>1.10 비만</item>
+        <item>1.11 대사증후군</item>
+        <item>1.12 지방간</item>
+    </array>
+    <array name="health_info_list2">
+        <item>2.1 운동효과</item>
+        <item>2.2 나에게 맞는 운동</item>
+        <item>2.3 기본적인 운동 요령</item>
+        <item>2.4 올바른 운동순서</item>
+        <item>2.5 질환별 운동효과</item>
+        <item>2.6 운동과 당뇨병</item>
+        <item>2.7 운동과 고혈압</item>
+        <item>2.8 운동과 비만</item>
+        <item>2.9 운동과 고지혈증</item>
+        <item>2.10 운동과 심장병</item>
+        <item>2.11 운동과 요통</item>
+        <item>2.12 운동과 골다골증</item>
+        <item>2.13 운동과 호흡기질환</item>
+        <item>2.14 운동과 관절염</item>
+    </array>
+    <array name="health_info_list3">
+        <item>3.1 영양소의 종류와 필요량</item>
+        <item>3.2 고혈압 영양정보</item>
+        <item>3.3 당뇨 영양정보</item>
+        <item>3.4 비만 영양정보</item>
+        <item>3.5 지방간 영양정보</item>
+        <item>3.6 올바른 식습관</item>
+        <item>3.7 고지혈증 영양정보</item>
+    </array>
+    <array name="health_info_list4">
+        <item>4.1 유아의 체중관리</item>
+        <item>4.2 지방흡입 수술</item>
+        <item>4.3 사우나와 체중조절</item>
+        <item>4.4 황제다이어트</item>
+    </array>
+    <array name="health_info_list5">
+        <item>5.1 계절과 음식 봄</item>
+        <item>5.2 계절과 음식 여름</item>
+        <item>5.3 계절과 음식 가을</item>
+        <item>5.4 계절과 음식 겨울</item>
+    </array>
+    <array name="health_info_list6">
+        <item>6.1 신장과 만성신부전증</item>
+        <item>6.2 당뇨병 증세에 따른 치료</item>
+        <item>6.3 당뇨병 그리고 약</item>
+        <item>6.4 당뇨병과 콩물</item>
+        <item>6.5 당뇨병 환자와 간식</item>
+        <item>6.6 혈당조절에 따른 식사요법</item>
+        <item>6.7 당뇨병과 보리밥,잡곡밥</item>
+        <item>6.8 혈압약과 두통</item>
+        <item>6.9 나이와 혈압의 상관관계</item>
+    </array>
+    <array name="health_detail_1">
+        <item>@string/healthinfo_list1_inner_1_data</item>
+        <item>@string/healthinfo_list1_inner_2_data</item>
+        <item>@string/healthinfo_list1_inner_3_data</item>
+        <item>@string/healthinfo_list1_inner_4_data</item>
+        <item>@string/healthinfo_list1_inner_5_data</item>
+        <item>@string/healthinfo_list1_inner_6_data</item>
+        <item>@string/healthinfo_list1_inner_7_data</item>
+        <item>@string/healthinfo_list1_inner_8_data</item>
+        <item>@string/healthinfo_list1_inner_9_data</item>
+        <item>@string/healthinfo_list1_inner_10_data</item>
+        <item>@string/healthinfo_list1_inner_11_data</item>
+        <item>@string/healthinfo_list1_inner_12_data</item>
+    </array>
+    <array name="health_detail_2">
+        <item>@string/healthinfo_list2_inner_1_data</item>
+        <item>@string/healthinfo_list2_inner_2_data</item>
+        <item>@string/healthinfo_list2_inner_3_data</item>
+        <item>@string/healthinfo_list2_inner_4_data</item>
+        <item>@string/healthinfo_list2_inner_5_data</item>
+        <item>@string/healthinfo_list2_inner_6_data</item>
+        <item>@string/healthinfo_list2_inner_7_data</item>
+        <item>@string/healthinfo_list2_inner_8_data</item>
+        <item>@string/healthinfo_list2_inner_9_data</item>
+        <item>@string/healthinfo_list2_inner_10_data</item>
+        <item>@string/healthinfo_list2_inner_11_data</item>
+        <item>@string/healthinfo_list2_inner_12_data</item>
+        <item>@string/healthinfo_list2_inner_13_data</item>
+        <item>@string/healthinfo_list2_inner_14_data</item>
+    </array>
+    <array name="health_detail_3">
+        <item>@string/healthinfo_list3_inner_1_data</item>
+        <item>@string/healthinfo_list3_inner_2_data</item>
+        <item>@string/healthinfo_list3_inner_3_data</item>
+        <item>@string/healthinfo_list3_inner_4_data</item>
+        <item>@string/healthinfo_list3_inner_5_data</item>
+        <item>@string/healthinfo_list3_inner_6_data</item>
+        <item>@string/healthinfo_list3_inner_7_data</item>
+    </array>
+    <array name="health_detail_4">
+        <item>@string/healthinfo_list4_inner_1_data</item>
+        <item>@string/healthinfo_list4_inner_2_data</item>
+        <item>@string/healthinfo_list4_inner_3_data</item>
+        <item>@string/healthinfo_list4_inner_4_data</item>
+    </array>
+    <array name="health_detail_5">
+        <item>@string/healthinfo_list5_inner_1_data</item>
+        <item>@string/healthinfo_list5_inner_2_data</item>
+        <item>@string/healthinfo_list5_inner_3_data</item>
+        <item>@string/healthinfo_list5_inner_4_data</item>
+    </array>
+    <array name="health_detail_6">
+        <item>@string/healthinfo_list6_inner_1_data</item>
+        <item>@string/healthinfo_list6_inner_2_data</item>
+        <item>@string/healthinfo_list6_inner_3_data</item>
+        <item>@string/healthinfo_list6_inner_4_data</item>
+        <item>@string/healthinfo_list6_inner_5_data</item>
+        <item>@string/healthinfo_list6_inner_6_data</item>
+        <item>@string/healthinfo_list6_inner_7_data</item>
+        <item>@string/healthinfo_list6_inner_8_data</item>
+        <item>@string/healthinfo_list6_inner_9_data</item>
+    </array>
+</resources>

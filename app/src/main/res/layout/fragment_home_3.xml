@@ -1,0 +1,518 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2px"
+                android:layout_marginTop="2px"
+                android:layout_weight="0.22"
+                android:background="@drawable/main_boryung" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_bg"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:id="@+id/btnBP1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/main_heart" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="50dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_weight="0.53"
+                            android:gravity="center|right">
+
+                            <TextView
+                                android:id="@+id/txtBPM"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0"
+                                android:textColor="@color/colorYellow600"
+                                android:textSize="@dimen/txt_size_50sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.47"
+                            android:gravity="center|left"
+                            android:orientation="vertical">
+
+                            <android.support.v4.widget.Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.44" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.56"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="BPM"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/application_text_size" />
+
+                                <ImageView
+                                    android:id="@+id/imgStatus"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/main_smile01" />
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="2px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/white" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="30dp">
+
+                        <!--Blood Pressure-->
+                        <FrameLayout
+                            android:id="@+id/btnBP2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/main_icon01" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center|right">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cap_bloodpressure"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.6"
+                                        android:background="@drawable/main_icon01"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txtBpVal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="0/"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+                                    <TextView
+                                        android:id="@+id/txtBpMin"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="0"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="@string/mmHg"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+
+                        <!--Blood Sugar-->
+                        <FrameLayout
+                            android:id="@+id/btnBS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/main_icon02" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center|right">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/cap_bloodsugar"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.6"
+                                        android:background="@drawable/main_icon01"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/txtBSStyle"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="@string/cap_ceremony_title"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+
+                                    <TextView
+                                        android:id="@+id/txtBsVal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="0/0"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center|left"
+                                        android:text="@string/unit_mg_dl"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:textColor="@android:color/white" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <!--Weight-->
+                        <FrameLayout
+                            android:id="@+id/btnWeight"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|top"
+                                android:background="@drawable/main_icon03" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:gravity="center|top|right"
+                                    android:orientation="vertical">
+
+                                    <android.support.v4.widget.Space
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="0dp"
+                                        android:layout_gravity="center|right"
+                                        android:layout_weight="0.6"
+                                        android:textSize="@dimen/application_text_size_small"
+                                        android:text="@string/cap_weight"
+                                        android:textColor="@android:color/white" />
+
+                                    <android.support.v4.widget.Space
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.2" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.2">
+
+                                    <ImageView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.6"
+                                        android:background="@drawable/main_icon01"
+                                        android:visibility="invisible" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.4"
+                                    android:orientation="vertical">
+
+                                    <android.support.v4.widget.Space
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.2" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="0.8"
+                                        android:orientation="vertical">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/cap_height_title"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:id="@+id/txtHeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/default_margin"
+                                                android:layout_gravity="center|left"
+                                                android:text="0"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/unit_cm"
+                                                android:textColor="@android:color/white" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/cap_weight_title"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:id="@+id/txtWeight"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/default_margin"
+                                                android:layout_gravity="center|left"
+                                                android:text="0"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/unit_kg"
+                                                android:textColor="@android:color/white" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/cap_bmi_title"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:id="@+id/txtBMI"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/default_margin"
+                                                android:layout_gravity="center|left"
+                                                android:text="0"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/up_bmi_kg_m2"
+                                                android:textColor="@android:color/white" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/cap_basic_metabolism_title"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:id="@+id/txtBMR"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="@dimen/default_margin"
+                                                android:layout_gravity="center|left"
+                                                android:text="0"
+                                                android:textColor="@android:color/white" />
+                                            <TextView
+                                                android:textSize="@dimen/application_text_size_small"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center|left"
+                                                android:text="@string/unit_kcal"
+                                                android:textColor="@android:color/white" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@android:color/white"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/notice" />
+
+        <TextView
+            android:textSize="@dimen/application_text_size_super_small_11dp"
+            android:id="@+id/txtHealType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_notice_color" />
+    </LinearLayout>
+</LinearLayout>

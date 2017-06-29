@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_all"
+        android:title="@string/cap_totalinputinformation" />
+
+    <item
+        android:id="@+id/menu_equiment"
+        android:title="@string/cap_autoinputinformation" />
+
+    <item
+        android:id="@+id/menu_uer_input"
+        android:title="@string/cap_manualinputinformation" />
+</menu>

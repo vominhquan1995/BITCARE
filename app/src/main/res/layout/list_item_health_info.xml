@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tvConsultation"
+    style="@style/BCTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/default_list_item_margin_bottom"
+    android:background="@color/color_ffffff"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="@dimen/padding_16dp" />

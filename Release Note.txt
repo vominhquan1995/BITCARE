@@ -1,0 +1,144 @@
+Version : 1.0.0.10
+
+Note :
+1/Update showing BSStyle icon follow "BSTYPE" at LastMSIInfo API
+2/Update showing BMI value icon follow "BMI" at LastMSIInfo API
+3/Update showing BMR value icon follow "BMR" at LastMSIInfo API
+
+Issue :
+Home page
+1/Missing Health info text response from LastMSIInfo API
+2/Missing Health type response from LastMSIInfo API
+3/Missing Target weight response from LastMSIInfo API
+
+Add target weight page
+1/API AddFitWeight not working
+
+Request :
+1/New API document
+2/All new resource need implement ot not?
+
+=========================================================================
+
+Version : 1.0.0.11
+
+Note :
+1/Update Investigate result screen UI
+2/Update Target weight at beginning is "0kg"
+
+Issue :
+Home page
+1/Missing Health info text response from LastMSIInfo API
+2/Missing Health type response from LastMSIInfo API
+3/Missing Target weight response from LastMSIInfo API
+
+Add target weight page
+1/API AddFitWeight not working
+
+Request :
+1/New API document
+2/All new resource need implement ot not?
+
+=========================================================================
+
+Version : 1.0.0.12
+
+Note:
+1/Update new UI design
+2/Change format time at page input
+3/Update new Login API
+4/Update new LastMSIInfo API
+
+Issue:
+1/Missing target weight param from LastMSIInfo API
+2/Need standard value for update up/down icon on list history sugar
+
+Request:
+1/Update API AddFitWeight (Current is not working)
+
+=========================================================================
+
+Version : 1.0.0.13
+
+Note:
+1/Add new AddFitWeight APIs
+2/Bugs fixed
+
+Issue:
+1/Need standard value for update up/down icon on list history sugar
+
+Request:
+1/Update API AddFitWeight (Current is not working)
+
+=========================================================================
+
+Version : 1.0.0.14
+
+Note:
+1/Update new Design at(Login,IDSearch,PassSearch,RegistrationInit,Registration)
+2/Bugs fixed
+
+Issue:
+1/Need standard value for update up/down icon on list history sugar)
+
+Request:
+1/After complete UI/UX need clean sources code to remove unused resources.
+
+=========================================================================
+
+Version : 1.0.0.15
+
+Note:
+1/Update display service message as Toast
+2/Change Menu scrim background color to Transparent
+2/Bugs fixed
+
+Issue:
+1/Need standard value for update up/down icon on list history sugar)
+2/Json structure error of APIs below :
+    - AddBPData (Superfluous "," character at the end of Json string)
+    - AddBSData (Superfluous "," character at the end of Json string)
+    - PWModify (Superfluous "," character at the end of Json string)
+
+Request:
+1/After complete UI/UX need clean sources code to remove unused resources.
+
+=========================================================================
+
+Version : 1.0.0.16
+
+Note:
+1/Change Menu scrim background color to Transparent 50%
+2/Apply new params (FitWeight) from LastMSIInfo API to Main Screen.
+2/Bugs fixed
+
+Issue:
+1/Need standard value for update up/down icon on list history sugar)
+2/Json structure error of APIs below :
+    - AddBPData (Superfluous "," character at the end of Json string)
+    - AddBSData (Superfluous "," character at the end of Json string)
+    - PWModify (Superfluous "," character at the end of Json string)
+
+Request:
+1/After complete UI/UX need clean sources code to remove unused resources.
+
+=========================================================================
+
+Version : 1.0.0.17
+
+
+Note:
+1. Implement bluetooth connection device
+2. Edit display data on page home
+3. Update check id by button for page resgistration acccount
+4. Check withdraw account after back from background
+5. Move to page input bloodpressure when receive data from device all time
+6. Change format time send to server from 12h to 24h
+7. Implement type bloodpressure input
+
+Issue:
+1/Need standard value for update up/down icon on list history sugar)
+2/Json structure error of APIs below :
+    - AddBPData (Superfluous "," character at the end of Json string)
+    - AddBSData (Superfluous "," character at the end of Json string)
+    - PWModify (Superfluous "," character at the end of Json string)
